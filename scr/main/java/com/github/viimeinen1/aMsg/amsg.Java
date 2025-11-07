@@ -9,7 +9,7 @@ import net.kyori.adventure.text.minimessage.MiniMessage;
 /**
  * Util for messaging player
  */
-public class msg {
+public class amsg {
 
     private static Component prefix = Component.empty();
 
