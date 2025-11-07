@@ -1,5 +1,6 @@
 package com.github.viimeinen1.amsg;
 
+import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
 import net.kyori.adventure.audience.Audience;
@@ -9,12 +10,12 @@ import net.kyori.adventure.text.minimessage.MiniMessage;
 /**
  * Util for messaging player
  */
-public class amsg {
+public class aMsg extends JavaPlugin {
 
-    private static Component prefix = Component.empty();
+    private static Component pluginPrefix = Component.empty();
 
-    public static Component prefix() {return prefix;}
-    public static void prefix(@NotNull Component prefix) {this.prefix = prefix;}
+    public static Component prefix() {return pluginPrefix;}
+    public static void prefix(@NotNull Component prefix) {pluginPrefix = prefix;}
 
     /**
      * Send message to player.
@@ -27,7 +28,7 @@ public class amsg {
      */
     @SafeVarargs
     public static <T> void send(@NotNull Audience sender, @NotNull T... content) {
-        send(config.prefix, sender, content);
+        send(pluginPrefix, sender, content);
     }
 
     /**

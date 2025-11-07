@@ -3,10 +3,12 @@ version = "1.0"
 description = "small messaging library for plugins"
 
 plugins {
+    id("maven-publish")
     id("java-library")
 }
 
 repositories {
+    mavenLocal()
     maven {
         name = "papermc"
         url = uri("https://repo.papermc.io/repository/maven-public/") 
