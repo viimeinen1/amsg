@@ -1,4 +1,4 @@
-package com.github.viimeinen1.aduel.Utils;
+package com.github.viimeinen1.amsg;
 
 import org.jetbrains.annotations.NotNull;
 
