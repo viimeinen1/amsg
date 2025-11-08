@@ -6,7 +6,7 @@ Small messaging library to send messages with prefixes for players.
 
 To use the library in your project, add it as a dependency
 
-Gradle:
+build.gradle.kts:
 ```java
 repositories {
     mavenCentral()
