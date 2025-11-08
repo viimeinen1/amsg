@@ -10,7 +10,7 @@ Gradle:
 ```java
 repositories {
     mavenCentral()
-    maven { url = uri("https://www.jitpackio") }
+    maven { url = uri("https://www.jitpack.io") }
 }
 
 dependencies {
