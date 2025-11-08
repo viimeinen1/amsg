@@ -14,7 +14,18 @@ public class aMsg extends JavaPlugin {
 
     private static Component pluginPrefix = Component.empty();
 
+    /**
+     * Get used prefix in messages.
+     * 
+     * @return prefix
+     */
     public static Component prefix() {return pluginPrefix;}
+
+    /**
+     * Set used prefix in messages.
+     * 
+     * @param prefix
+     */
     public static void prefix(@NotNull Component prefix) {pluginPrefix = prefix;}
 
     /**
