@@ -21,10 +21,12 @@ dependencies {
 ## Usage
 
 ```java
-// set prefix for all messages
+/* Default usage */
+
+// set prefix for all messages globally
 aMsg.prefix(MiniMessage.minimessage().deserialize("<gold>[prefix] "))
 
-// or use aMsg.mm() {= MiniMessage.minimessage().deserialize()}
+// or use aMsg.mm() {= MiniMessage.minimessage().deserialize()} for deserializing
 
 // send messages
 aMsg.send(player, "<green>Hello, world!") // -> [prefix] Hello, world!
@@ -34,10 +36,21 @@ aMsg.send(player, "Multiline", "message")
     -> [prefix] message
 */
 
-// supports other prefixes and components as well
+// send single message with different prefix
 aMsg.send(aMsg.mm("<red>[another prefix] "), player, Component.text("hello"), "<red>hi!");
 /*
     -> [another prefix] hello
     -> [another prefix] hi!
 */
+```
+
+```java
+/* Multiple prefixes */
+
+// if you require multiple prefixes for different functions, use aMsg.Msg instead of aMsg
+Msg defaultMsg = new Msg(aMsg.mm("<green>[default] "));
+Msg adminMsg = new Msg(aMsg.mm("<gold>[admin] "));
+
+defaultMsg.send(player, "Hello admins") // -> [default] Hello admins
+adminMsg.send(player, "Hello defaults") // -> [admin] Hello defaults
 ```

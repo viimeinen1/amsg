@@ -5,6 +5,7 @@ description = "small messaging library for plugins"
 plugins {
     id("maven-publish")
     id("java-library")
+    // id("java")
 }
 
 repositories {
@@ -23,4 +24,5 @@ dependencies {
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(21))
     withSourcesJar()
+    withJavadocJar()
 }
