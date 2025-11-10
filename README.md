@@ -8,13 +8,8 @@ To use the library in your project, add it as a dependency
 
 build.gradle.kts:
 ```java
-repositories {
-    mavenCentral()
-    maven { url = uri("https://www.jitpack.io") }
-}
-
 dependencies {
-    implementation("com.github.viimeinen1:amsg:1.0.0")
+    implementation("io.github.viimeinen1:amsg:1.0.1")
 }
 ```
 

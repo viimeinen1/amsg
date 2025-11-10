@@ -1,5 +1,3 @@
-import com.vanniktech.maven.publish.SonatypeHost
-
 group = "io.github.viimeinen1.amsg"
 version = "1.0.1"
 description = "small messaging library for plugins"
@@ -33,31 +31,28 @@ mavenPublishing {
 }
 
 mavenPublishing {
-  coordinates("com.github.viimeinen1.amsg", "amsg", "1.0.1")
+  coordinates(group.toString(), name.toString(), version.toString())
 
   pom {
     name.set("aMsg")
     description.set("Small messaging library")
     inceptionYear.set("2025")
-    url.set("https://github.com/username/mylibrary/")
+    url.set("https://github.com/viimeinen1/amsg/")
     licenses {
       license {
-        name.set("The Apache License, Version 2.0")
-        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-        distribution.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+        name.set("MIT")
+        url.set("https://opensource.org/licenses/MIT")
       }
     }
     developers {
       developer {
-        id.set("username")
-        name.set("User Name")
-        url.set("https://github.com/username/")
+        id.set("viimeinen1")
+        name.set("viimeinen1")
+        url.set("https://github.com/viimeinen1/")
       }
     }
     scm {
-      url.set("https://github.com/username/mylibrary/")
-      connection.set("scm:git:git://github.com/username/mylibrary.git")
-      developerConnection.set("scm:git:ssh://git@github.com/username/mylibrary.git")
+      url.set("https://github.com/viimeinen1/amsg/")
     }
   }
 }
