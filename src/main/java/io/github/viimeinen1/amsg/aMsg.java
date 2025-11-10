@@ -1,4 +1,4 @@
-package com.github.viimeinen1.amsg;
+package io.github.viimeinen1.amsg;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
