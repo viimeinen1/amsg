@@ -4,7 +4,9 @@ Small messaging library to send messages with prefixes for players.
 
 ## Add as dependency
 
-To use the library in your project, add it as a dependency
+To use the library in your project, add it as a dependency.
+
+The dependency can be seen at https://central.sonatype.com/artifact/io.github.viimeinen1.amsg/aMsg
 
 build.gradle.kts:
 ```java
