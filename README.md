@@ -9,7 +9,7 @@ To use the library in your project, add it as a dependency
 build.gradle.kts:
 ```java
 dependencies {
-    implementation("io.github.viimeinen1:amsg:1.0.1")
+    implementation("io.github.viimeinen1.amsg:aMsg:1.0.1")
 }
 ```
 
